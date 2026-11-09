@@ -1,26 +1,9 @@
-"""Paletas de color de las gráficas, según el modo visual y la accesibilidad.
+"""Paletas de color de las gráficas según el modo de accesibilidad.
 
-La aplicación tiene varias paletas y una sola activa por vez. El modo es una
-opción de sesión (se elige en «Configurar» y no se guarda en la base de datos),
-así que este módulo guarda el estado y el resto de la interfaz le pregunta el
-color en vez de escribirlo a mano.
-
-Existen cuatro paletas:
-
-* ``estandar``: la paleta por defecto, la que se usa hoy.
-* ``rojo_verde``: serie de **Okabe & Ito (2008)**, apta para deuteranopía,
-  protanopía y deuteranomalía/protanomalía. Tiene menos colores que la
-  estándar a propósito: agregar tonos rompería justamente esa garantía.
-* ``azul_amarillo``: variante para tritanomalía y tritanopía. En esta
-  deficiencia se confunden sobre todo estos pares —azul↔verde, amarillo↔rojo,
-  violeta↔rojo y amarillo↔rosado—, así que la paleta los separa por tonalidad y
-  por luminancia en vez de eliminar los colores (no busca simular la visión,
-  solo dar una configuración visual con menos ambigüedades).
-* ``completa``: escala de grises por luminancia para la acromatopsia /
-  monocromatismo, donde solo se diferencia el brillo.
-
-La arquitectura permite agregar más modos añadiendo una entrada a ``PALETAS``;
-cada paleta requiere su fuente o criterio documentado, no colores inventados.
+El resto de la interfaz le pide el color a este módulo en vez de escribirlo a mano.
+Hay cuatro: estandar (la de siempre), rojo_verde (Okabe & Ito 2008, para deuteranopía
+y protanopía), azul_amarillo (para tritanopía) y completa (grises, para acromatopsia).
+Para agregar otra se suma una entrada en PALETAS, con su fuente.
 """
 
 from __future__ import annotations

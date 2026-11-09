@@ -197,7 +197,7 @@ class VentanaPrincipal(QWidget):
             self.area_central.eliminar_intervalos
         )
 
-        # --- Fórmulas ---
+        # Fórmulas
         self.panel_derecho.formulas.formulaSolicitada.connect(
             self.area_central.aplicar_formula
         )
@@ -665,7 +665,7 @@ class VentanaPrincipal(QWidget):
                 mensaje += f"\n{aviso}"
         QMessageBox.information(self, "Cargar", mensaje)
 
-    # --- Arrastrar y soltar CSV desde el Explorador ---
+    # Arrastrar y soltar CSV desde el Explorador
 
     def _instalar_drag_drop(self):
         """Habilita soltar archivos CSV sobre toda la ventana principal.

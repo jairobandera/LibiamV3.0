@@ -99,7 +99,7 @@ class ConfiguracionDialog(QDialog):
         titulo.setStyleSheet("font-size: 18px; font-weight: 700;")
         layout.addWidget(titulo)
 
-        # --- Sección: intervalos / recortes ---
+        # Sección: intervalos / recortes
         seccion = QFrame()
         seccion_layout = QVBoxLayout()
         seccion_layout.setContentsMargins(0, 0, 0, 0)
@@ -126,7 +126,7 @@ class ConfiguracionDialog(QDialog):
         seccion.setLayout(seccion_layout)
         layout.addWidget(seccion)
 
-        # --- Sección: comportamiento del zoom ---
+        # Sección: comportamiento del zoom
         seccion_zoom = QFrame()
         zoom_layout = QVBoxLayout()
         zoom_layout.setContentsMargins(0, 0, 0, 0)
@@ -174,7 +174,7 @@ class ConfiguracionDialog(QDialog):
         seccion_zoom.setLayout(zoom_layout)
         layout.addWidget(seccion_zoom)
 
-        # --- Sección: colores de las curvas ---
+        # Sección: colores de las curvas
         seccion_colores = QFrame()
         colores_layout = QVBoxLayout()
         colores_layout.setContentsMargins(0, 0, 0, 0)
@@ -236,7 +236,7 @@ class ConfiguracionDialog(QDialog):
         layout.addWidget(seccion_colores)
         self._actualizar_colores_ui()
 
-        # --- Sección: accesibilidad ---
+        # Sección: accesibilidad
         seccion_accesibilidad = QFrame()
         accesibilidad_layout = QVBoxLayout()
         accesibilidad_layout.setContentsMargins(0, 0, 0, 0)
@@ -251,7 +251,7 @@ class ConfiguracionDialog(QDialog):
         self.chk_accesible.setChecked(accesibilidad.activo())
         accesibilidad_layout.addWidget(self.chk_accesible)
 
-        # --- Tipo de visión cromática ---
+        # Tipo de visión cromática
         gpo_tipo = QFrame()
         gpo_tipo_layout = QVBoxLayout()
         gpo_tipo_layout.setContentsMargins(22, 0, 0, 0)
@@ -282,7 +282,7 @@ class ConfiguracionDialog(QDialog):
         gpo_tipo.setVisible(accesibilidad.activo())
         accesibilidad_layout.addWidget(gpo_tipo)
 
-        # --- Opciones adicionales ---
+        # Opciones adicionales
         gpo_opciones = QFrame()
         gpo_opciones_layout = QVBoxLayout()
         gpo_opciones_layout.setContentsMargins(22, 0, 0, 0)
@@ -314,7 +314,7 @@ class ConfiguracionDialog(QDialog):
         seccion_accesibilidad.setLayout(accesibilidad_layout)
         layout.addWidget(seccion_accesibilidad)
 
-        # --- Sección: mantenimiento de la carpeta «archivos» ---
+        # Sección: mantenimiento de la carpeta «archivos»
         seccion_archivos = QFrame()
         archivos_layout = QVBoxLayout()
         archivos_layout.setContentsMargins(0, 0, 0, 0)

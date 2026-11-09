@@ -53,21 +53,21 @@ class PanelCalculo(QFrame):
         layout.setContentsMargins(10, 10, 10, 10)
         layout.setSpacing(6)
 
-        # --- Encabezado ---
+        # Encabezado
         titulo = QLabel("Fórmulas")
         titulo.setObjectName("tituloSeccionMapeo")
         layout.addWidget(titulo)
 
-        # --- Fuente de datos ---
+        # Fuente de datos
         self._agregar_separador(layout)
         layout.addWidget(self._crear_bloque_fuente())
         self.set_hay_filtro(False)
 
-        # --- Fórmula ---
+        # Fórmula
         self._agregar_separador(layout)
         layout.addWidget(self._crear_bloque_formula())
 
-        # --- Acciones ---
+        # Acciones
         self._agregar_separador(layout)
         fila = QHBoxLayout()
         fila.setSpacing(6)
@@ -85,14 +85,14 @@ class PanelCalculo(QFrame):
         fila.addWidget(self.btn_quitar_formula)
         layout.addLayout(fila)
 
-        # --- Estado ---
+        # Estado
         self._agregar_separador(layout)
         self.lbl_estado_formula = QLabel("")
         self.lbl_estado_formula.setWordWrap(True)
         self.lbl_estado_formula.setObjectName("lblEstadoFormula")
         layout.addWidget(self.lbl_estado_formula)
 
-        # --- Resultados ---
+        # Resultados
         self._agregar_separador(layout)
         self.lbl_titulo_resultados = QLabel("Resultados")
         self.lbl_titulo_resultados.setObjectName("tituloSeccionFormula")

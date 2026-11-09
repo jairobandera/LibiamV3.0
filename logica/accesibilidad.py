@@ -1,19 +1,8 @@
-"""Estado de sesión del modo accesible y de las opciones de renderizado.
+"""Estado del modo accesible: si está activo, el tipo de visión elegido y opciones
+de dibujo (grosor, estilos de línea y nombre del color). Los colores están en paleta.py.
 
-Separa dos responsabilidades que antes convivían en la paleta:
-
-* ``logica/paleta.py`` es la única fuente de verdad de los **colores**.
-* Este módulo guarda el **estado** del modo accesible (activado o no), el tipo
-  de visión cromática elegido y las opciones adicionales de renderizado (grosor
-  de líneas, estilos de línea diferenciados y nombre del color en el intervalo).
-
-Como en las demás opciones de sesión, nada de esto se persiste: se elige en
-«Configurar» y vuelve a los valores por defecto al reiniciar la aplicación.
-
-Con el modo accesible **desactivado** todo se comporta exactamente como hoy:
-la paleta activa es la estándar, los grosores y estilos de línea son los
-originales y no se muestra el nombre de los colores. Este módulo solo cambia
-el comportamiento cuando ``activo()`` devuelve ``True``.
+No se guarda nada, se elige en «Configurar» y al reiniciar vuelve a lo normal.
+Con el modo apagado todo se ve como siempre.
 """
 
 from __future__ import annotations
@@ -21,7 +10,7 @@ from __future__ import annotations
 from logica import paleta
 
 
-# --- Tipos de visión cromática disponibles en la interfaz -------------------
+# Tipos de visión cromática disponibles en la interfaz
 
 # Se reutilizan las claves de ``paleta.PALETAS``: el color siempre lo define la
 # paleta y aquí solo se recuerda cuál está activa.
@@ -37,7 +26,7 @@ TIPOS_DISPONIBLES = (
     TIPO_AZUL_AMARILLO,
     TIPO_COMPLETO,
 )
-# --- Tipos de línea (señal original, filtrada y de fórmula) -----------------
+# Tipos de línea (señal original, filtrada y de fórmula)
 TIPO_LINEA_ORIGINAL = "original"
 TIPO_LINEA_FILTRADA = "filtrada"
 TIPO_LINEA_FORMULA = "formula"
@@ -67,7 +56,7 @@ _ANCHO_BASE = {
 # un paso perceptible sobre el grosor base. Ajustar aquí si se quiere otro.
 _FACTOR_GROSOR = 1.7
 
-# --- Estado de sesión --------------------------------------------------------
+# Estado de sesión
 _activo = False
 _tipo_vision = None
 _mostrar_nombre_color = True
@@ -132,7 +121,7 @@ def set_aumentar_grosor(valor: bool) -> None:
     global _aumentar_grosor
     _aumentar_grosor = bool(valor)
 
-# --- Opciones de renderizado -------------------------------------------------
+# Opciones de renderizado
 
 def grosor_senal(tipo_linea: str) -> float:
     """Grosor de la línea ``tipo_linea`` según las opciones activas.

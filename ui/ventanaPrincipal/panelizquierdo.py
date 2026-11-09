@@ -205,7 +205,7 @@ class PanelIzquierdo(QFrame):
         titulo.setObjectName("tituloSeccion")
         layout.addWidget(titulo)
 
-        # --- Masa corporal (por archivo, se guarda en la BD) ---
+        # Masa corporal (por archivo, se guarda en la BD)
         fila_masa = QHBoxLayout()
         fila_masa.setSpacing(6)
 
@@ -236,7 +236,7 @@ class PanelIzquierdo(QFrame):
         self.lbl_estado_masa.setWordWrap(True)
         layout.addWidget(self.lbl_estado_masa)
 
-        # --- Masa total (por archivo, se guarda en la BD) ---
+        # Masa total (por archivo, se guarda en la BD)
         fila_masa_total = QHBoxLayout()
         fila_masa_total.setSpacing(6)
 
@@ -266,7 +266,7 @@ class PanelIzquierdo(QFrame):
         self.lbl_estado_masa_total.setWordWrap(True)
         layout.addWidget(self.lbl_estado_masa_total)
 
-        # --- Estatura (por archivo, en metros, se guarda en la BD) ---
+        # Estatura (por archivo, en metros, se guarda en la BD)
         fila_estatura = QHBoxLayout()
         fila_estatura.setSpacing(6)
 
@@ -296,7 +296,7 @@ class PanelIzquierdo(QFrame):
         self.lbl_estado_estatura.setWordWrap(True)
         layout.addWidget(self.lbl_estado_estatura)
 
-        # --- Gravedad (constante de sesión, no se guarda en la BD) ---
+        # Gravedad (constante de sesión, no se guarda en la BD)
         fila_gravedad = QHBoxLayout()
         fila_gravedad.setSpacing(6)
 

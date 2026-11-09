@@ -301,7 +301,7 @@ NOMBRES_ROLES = {
 }
 
 
-# --- Fórmulas creadas por el usuario ----------------------------------------
+# Fórmulas creadas por el usuario
 # El texto nunca pasa por eval(). Se analiza con ast y se interpreta solo si
 # todos sus componentes pertenecen a esta lista blanca.
 VARIABLE_SENAL_INTERVALO = "senal"

@@ -1,15 +1,8 @@
 """Proyectos guardados en la carpeta «archivos».
 
-Un proyecto son hasta tres archivos hermanos dentro de esa carpeta:
-
-``<nombre>.csv``              copia del CSV original.
-``<nombre>_anotaciones.csv``  intervalos, sub-intervalos y notas trabajados.
-``<nombre>_estado.json``      variables, filtros y disposición de gráficas.
-
-El archivo de estado es opcional para que los proyectos creados por versiones
-anteriores, que solo tienen CSV y anotaciones, continúen abriendo normalmente.
-Los archivos se asocian por nombre y la carpeta no se puede cambiar desde la
-interfaz.
+Cada proyecto son hasta tres archivos con el mismo nombre: <nombre>.csv (copia del original),
+<nombre>_anotaciones.csv (intervalos y notas) y <nombre>_estado.json (variables, filtros y
+gráficas). El json es opcional para que sigan abriendo los proyectos viejos.
 """
 
 from __future__ import annotations
