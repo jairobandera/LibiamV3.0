@@ -208,16 +208,12 @@ configuraciones.
 
 **Descargar:** [Windows](https://github.com/jairobandera/ABS-3.0/releases/download/v3.0.0/ABS-3.0-Windows-x64.zip)
 
-1. Si se recibió un ZIP, ...
-
 1. Si se recibió un ZIP, extraer su contenido en una carpeta del equipo, por
    ejemplo en el Escritorio.
 2. Hacer doble clic sobre el ejecutable **ABS 3.0**.
 3. Si Windows SmartScreen muestra una advertencia, y el archivo proviene de la
    fuente oficial del proyecto, elegir **Más información → Ejecutar de todos
    modos**.
-
-### macOS
 
 ### macOS
 
