@@ -206,6 +206,10 @@ configuraciones.
 
 ### Windows
 
+**Descargar:** [Windows](https://github.com/jairobandera/ABS-3.0/releases/download/v3.0.0/ABS-3.0-Windows-x64.zip)
+
+1. Si se recibió un ZIP, ...
+
 1. Si se recibió un ZIP, extraer su contenido en una carpeta del equipo, por
    ejemplo en el Escritorio.
 2. Hacer doble clic sobre el ejecutable **ABS 3.0**.
@@ -214,6 +218,12 @@ configuraciones.
    modos**.
 
 ### macOS
+
+### macOS
+
+**Descargar:**
+[Apple Silicon (M1, M2, M3)](https://github.com/jairobandera/ABS-3.0/releases/download/v3.0.0/ABS-3.0-macOS-Apple-Silicon.zip) //
+[Intel](https://github.com/jairobandera/ABS-3.0/releases/download/v3.0.0/ABS-3.0-macOS-Intel.zip)
 
 1. Elegir la carpeta según el procesador: abrir el menú Apple → **Acerca de esta
    Mac** y revisar la línea **Chip**. Apple M1, M2, M3 o posterior corresponde a
@@ -230,6 +240,8 @@ configuraciones.
    doble clic.
 
 ### GNU/Linux (AppImage)
+
+**Descargar:** [ABS-3.0-x86_64.AppImage](https://github.com/jairobandera/ABS-3.0/releases/download/v3.0.0/ABS-3.0-Linux-x86_64.zip)
 
 La versión para GNU/Linux es una AppImage para equipos x86_64 (Intel o AMD),
 pensada para Ubuntu 22.04+, Debian 12+ o Linux Mint 21+.
