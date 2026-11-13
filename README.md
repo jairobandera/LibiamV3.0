@@ -85,8 +85,8 @@ un entorno virtual, instalar las dependencias y ejecutar `main.py`. Solo
 cambian los comandos.
 
 ```bash
-git clone <url-del-repositorio> libiam3.0
-cd libiam3.0
+git clone <url-del-repositorio> ABS-3.0
+cd ABS-3.0
 ```
 
 ### Windows
@@ -434,7 +434,7 @@ El detalle de cada pantalla está en el *Manual de usuario*.
 ## Estructura del proyecto
 
 ```text
-libiam3.0/
+ABS-3.0/
 ├── main.py                    Punto de entrada: base de datos, estilos y ventana principal
 ├── requirements.txt           Dependencias con versiones fijas
 ├── libiam_config.db           Configuración local (SQLite)
